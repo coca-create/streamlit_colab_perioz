@@ -27,13 +27,13 @@ from streamlit_module import moz_replace as rp
 def expire():
     data_folder = "/content/my_app"
 
-    expiration_date = datetime(2025, 6, 31)  # 期限日を設定
+    expiration_date = datetime(2025, 6, 30)  # 期限日を設定
     pathname=os.path.join(data_folder,'settings2.json')
     if datetime.now() > expiration_date:
         if not os.path.exists(pathname):
             with open(pathname,'w',encoding='utf-8')as f:
                 f.write("keywords")
-        print("このプログラムの有効期限は2025年1月31日です。有効期限が切れました。")
+        print("このプログラムの有効期限は2025年6月30日です。有効期限が切れました。")
         raise Exception("このプログラムの有効期限が切れました。")
 
     if os.path.exists(pathname):
