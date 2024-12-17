@@ -1,0 +1,12 @@
+{
+    "model_option": true,
+    "model_option2": true,
+    "model_option3": true,
+    "replacements_file": "replacements.csv",
+    "replace_words": true,
+    "ja_split":true,
+    "max_split":70,
+    "min_split":10,
+    "comma_split":true,
+    "dot_management_file": "dot_manager.csv"
+}
